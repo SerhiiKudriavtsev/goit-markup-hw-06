@@ -432,7 +432,7 @@ p {
   border-color: var(--accent-color);
 }
 .client-list li:hover svg,
-.client-list li:focus svg {
+.client-list li:focus-within svg {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -787,7 +787,7 @@ address li {
   /* display: flex;
   flex-direction: column; */
 }
-.form-imput {
+.form-input {
   padding: 12px 12px 12px 42px;
   font-family: inherit;
   width: 448px;
@@ -826,20 +826,30 @@ address li {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-label:hover,
-.form-label:focus {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
-
 .form-label-span {
   margin-bottom: 4px;
 }
 
-.form-label:hover .form-imput,
-.form-label:focus .form-imput {
+.form-label:hover .form-input,
+.form-label:focus .form-input {
   border: 1px solid var(--accent-color);
   cursor: pointer;
+}
+
+.form-icon {
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+.form-label:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-label:hover .form-icon {
   fill: var(--accent-color);
 }
 
@@ -874,15 +884,6 @@ address li {
   transition: 250ms var(--timing-function);
 }
 
-.form-icon {
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-}
-
 .form-label-check {
   font-weight: 400;
   font-size: 12px;
@@ -892,6 +893,7 @@ address li {
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .checkbox,
@@ -937,6 +939,8 @@ address li {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--parahraf-text-color);
+  margin-right: 5px;
 }
 
 .form-label-check-a {
