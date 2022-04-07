@@ -888,16 +888,10 @@ address li {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 32px;
-  height: 32px;
   cursor: pointer;
-  position: relative;
-}
-
-.form-check-div {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .checkbox,
