@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="./css/style.css" rel="stylesheet">
 </head>
-<body> 
+
+<body>
     <!--Шапка сайта-->
     <header class="header">
         <div class="container header-flex">
@@ -44,17 +49,17 @@
         </div>
     </header>
     <main>
-        <!--LДевиз и заказ услуги-->    
+        <!--LДевиз и заказ услуги-->
         <section class=" overlay section-hero">
             <div class="hero container ">
-                <h1>Эффективные решения <br/> для вашего бизнеса</h1>
+                <h1>Эффективные решения <br /> для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!--Приоритеты в работе-->
         <section class="section">
             <div class="container">
-                <h2 class="section-title visually-hidden">Заголовок секции на будущее</h2>  
+                <h2 class="section-title visually-hidden">Заголовок секции на будущее</h2>
                 <ul class="list">
                     <li>
                         <div>
@@ -187,7 +192,7 @@
                         <p>Frontend Developer</p>
                         <ul class="team-social-networks">
                             <li class="social-network-item">
-                            <a href="">
+                                <a href="">
                                     <svg class="social-networks-icon">
                                         <use href="./images/sprite.svg#icon-instagram"></use>
                                     </svg>
@@ -297,7 +302,7 @@
             <div class="container">
                 <h2>Постоянные клиенты</h2>
                 <ul class="client-list">
-                    <li>    
+                    <li>
                         <a href="" class="client-item">
                             <svg class="client-icon">
                                 <use href="./images/sprite.svg#icon-logo"></use>
@@ -398,18 +403,18 @@
                 <h2 class="footer-subscription-h">Подпишитесь на рассылку</h2>
                 <form class="form-subscription">
                     <label class="label-subscription">
-                        <input class="email-subscription" type="email" name="email-subscription" placeholder="E-mail"  >
+                        <input class="email-subscription" type="email" name="email-subscription" placeholder="E-mail">
                     </label>
                     <button class="button button-subscription" type="submit">
                         <span class="button-subscription-text"> Подписаться</span>
-                            <svg class="button-subscription-icon">
-                                <use href="./images/sprite.svg#icon-send"></use>
-                            </svg>
+                        <svg class="button-subscription-icon">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
         </div>
-    </footer>   
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <a href="" class="modal-a" data-modal-close>
@@ -423,43 +428,53 @@
             <form class="form">
                 <label class="form-label">
                     <span class="form-label-span">Имя</span>
-                    <input class="form-imput" type="text" name="username" autofocus />
-                    <svg class="form-icon">
-                        <use href="./images/sprite.svg#form-name"></use>
-                    </svg>
+                    <div class="form-div">
+                        <input class="form-imput" type="text" name="username" autofocus />
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#form-name"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="form-label">
-                    Телефон
-                    <input class="form-imput" type="tel" name="phone" />
-                    <svg class="form-icon">
-                        <use href="./images/sprite.svg#form-phone"></use>
-                    </svg>
+                    <span class="form-label-span">Телефон</span>
+                    <div class="form-div">
+                        <input class="form-imput" type="tel" name="phone" />
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#form-phone"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="form-label">
-                    Почта
-                    <input class="form-imput" type="email" name="email" />
-                    <svg class="form-icon">
-                        <use href="./images/sprite.svg#form-email"></use>
-                    </svg>
+                    <span class="form-label-span">Почта</span>
+                    <div class="form-div">
+                        <input class="form-imput" type="email" name="email" />
+                        <svg class="form-icon">
+                            <use href="./images/sprite.svg#form-email"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="form-label form-label-comment">
-                    Комментарий
+                    <span class="form-label-span">Комментарий</span>
                     <textarea class="form-comment" name="comment" placeholder="Введите текст"></textarea>
                 </label>
                 <label class="form-label-check">
-                    <input class="checkbox" type="checkbox" name="check" />
-                    <svg class="form-check-empty">
-                        <use href="./images/sprite.svg#form-check-empty"></use>
-                    </svg>
-                    <svg class="form-icon-check">
-                        <use href="./images/sprite.svg#form-check"></use>
-                    </svg>
-                    Соглашаюсь с рассылкой и принимаю <a class="form-label-check-a" href=""> Условия договора </a>
+                    <div class="form-check-div">
+                        <input class="checkbox" type="checkbox" name="check" />
+                        <svg class="form-check-empty">
+                            <use href="./images/sprite.svg#form-check-empty"></use>
+                        </svg>
+                        <svg class="form-icon-check">
+                            <use href="./images/sprite.svg#form-check"></use>
+                        </svg>
+                        <span class="form-consent"> Соглашаюсь с рассылкой и принимаю</span> <a
+                            class="form-label-check-a" href=""> Условия договора </a>
+                    </div>
                 </label>
                 <button class="button button-check" type="submit">Отправить</button>
             </form>
         </div>
-    </div> 
+    </div>
     <script src="./js/modal.js"></script>
 </body>
+
 </html>

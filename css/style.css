@@ -784,6 +784,8 @@ address li {
 .form {
   position: relative;
   transition: 250ms var(--timing-function);
+  /* display: flex;
+  flex-direction: column; */
 }
 .form-imput {
   padding: 12px 12px 12px 42px;
@@ -798,13 +800,6 @@ address li {
   letter-spacing: 0.01em;
   transition: 250ms var(--timing-function);
 }
-
-/* .form-imput:hover,
-.form-imput:focus {
-  border: 1px solid var(--accent-color);
-  cursor: pointer;
-  fill: var(--accent-color);
-} */
 
 .form-label {
   display: flex;
@@ -837,6 +832,10 @@ address li {
   cursor: pointer;
 }
 
+.form-label-span {
+  margin-bottom: 4px;
+}
+
 .form-label:hover .form-imput,
 .form-label:focus .form-imput {
   border: 1px solid var(--accent-color);
@@ -849,6 +848,11 @@ address li {
   border: 1px solid var(--accent-color);
   cursor: pointer;
   fill: var(--accent-color);
+}
+
+.form-div {
+  display: flex;
+  position: relative;
 }
 
 .form-comment {
@@ -871,10 +875,12 @@ address li {
 }
 
 .form-icon {
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
   width: 18px;
   height: 18px;
   position: absolute;
-  transform: translate(12px, 23px);
 }
 
 .form-label-check {
@@ -885,11 +891,13 @@ address li {
   width: 32px;
   height: 32px;
   cursor: pointer;
+  position: relative;
 }
 
-.form-label-check-a {
-  color: var(--accent-color);
-  text-decoration: underline;
+.form-check-div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .checkbox,
@@ -930,8 +938,25 @@ address li {
   clip: auto;
 }
 
+.form-consent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-label-check-a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .button-check {
   display: block;
+  padding: 10px 55px;
   margin: auto;
   margin-top: 30px;
 }
